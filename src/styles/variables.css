@@ -1,0 +1,44 @@
+:root {
+  --gallui-primary: #6366f1;
+  --gallui-primary-hover: #4f46e5;
+  --gallui-secondary: #64748b;
+  --gallui-success: #22c55e;
+  --gallui-warning: #f59e0b;
+  --gallui-error: #ef4444;
+  --gallui-info: #3b82f6;
+  
+  --gallui-bg: #ffffff;
+  --gallui-surface: #f8fafc;
+  --gallui-text-primary: #1e293b;
+  --gallui-text-secondary: #64748b;
+  --gallui-border: #e2e8f0;
+  
+  --gallui-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --gallui-radius-sm: 4px;
+  --gallui-radius-md: 8px;
+  --gallui-radius-lg: 12px;
+  --gallui-radius-full: 9999px;
+  
+  --gallui-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --gallui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --gallui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  --gallui-space-xs: 4px;
+  --gallui-space-sm: 8px;
+  --gallui-space-md: 16px;
+  --gallui-space-lg: 24px;
+  --gallui-space-xl: 32px;
+  --gallui-space-2xl: 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--gallui-font);
+  color: var(--gallui-text-primary);
+  background: var(--gallui-bg);
+  margin: 0;
+}

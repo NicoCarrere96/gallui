@@ -1,0 +1,87 @@
+.gallui-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: gallui-fade-in 0.2s ease;
+}
+
+@keyframes gallui-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gallui-modal {
+  background: var(--gallui-bg);
+  border-radius: var(--gallui-radius-lg);
+  box-shadow: var(--gallui-shadow-lg);
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: gallui-slide-up 0.2s ease;
+}
+
+@keyframes gallui-slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.gallui-modal--sm {
+  width: 90%;
+  max-width: 400px;
+}
+
+.gallui-modal--md {
+  width: 90%;
+  max-width: 600px;
+}
+
+.gallui-modal--lg {
+  width: 90%;
+  max-width: 800px;
+}
+
+.gallui-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--gallui-space-md) var(--gallui-space-lg);
+  border-bottom: 1px solid var(--gallui-border);
+}
+
+.gallui-modal__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gallui-text-primary);
+}
+
+.gallui-modal__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--gallui-space-xs);
+  color: var(--gallui-text-secondary);
+  border-radius: var(--gallui-radius-sm);
+  transition: background 0.2s ease;
+}
+
+.gallui-modal__close:hover {
+  background: var(--gallui-surface);
+}
+
+.gallui-modal__content {
+  padding: var(--gallui-space-lg);
+}

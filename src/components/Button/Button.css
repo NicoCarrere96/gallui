@@ -1,0 +1,115 @@
+.gallui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gallui-space-sm);
+  font-family: var(--gallui-font);
+  font-weight: 500;
+  border: none;
+  border-radius: var(--gallui-radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.gallui-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.gallui-button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Sizes */
+.gallui-button--sm {
+  padding: var(--gallui-space-xs) var(--gallui-space-sm);
+  font-size: 14px;
+  height: 32px;
+}
+
+.gallui-button--md {
+  padding: var(--gallui-space-sm) var(--gallui-space-md);
+  font-size: 16px;
+  height: 40px;
+}
+
+.gallui-button--lg {
+  padding: var(--gallui-space-md) var(--gallui-space-lg);
+  font-size: 18px;
+  height: 48px;
+}
+
+/* Variants */
+.gallui-button--primary {
+  background: var(--gallui-primary);
+  color: white;
+}
+
+.gallui-button--primary:hover:not(:disabled) {
+  background: var(--gallui-primary-hover);
+}
+
+.gallui-button--secondary {
+  background: var(--gallui-secondary);
+  color: white;
+}
+
+.gallui-button--secondary:hover:not(:disabled) {
+  background: #475569;
+}
+
+.gallui-button--outline {
+  background: transparent;
+  color: var(--gallui-primary);
+  border: 1px solid var(--gallui-primary);
+}
+
+.gallui-button--outline:hover:not(:disabled) {
+  background: var(--gallui-primary);
+  color: white;
+}
+
+.gallui-button--ghost {
+  background: transparent;
+  color: var(--gallui-text-primary);
+}
+
+.gallui-button--ghost:hover:not(:disabled) {
+  background: var(--gallui-surface);
+}
+
+.gallui-button--danger {
+  background: var(--gallui-error);
+  color: white;
+}
+
+.gallui-button--danger:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+/* Loading */
+.gallui-button--loading {
+  position: relative;
+}
+
+.gallui-button__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: gallui-spin 0.75s linear infinite;
+}
+
+@keyframes gallui-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gallui-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

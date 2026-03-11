@@ -1,0 +1,26 @@
+.gallui-skeleton {
+  background: linear-gradient(90deg, var(--gallui-surface) 25%, var(--gallui-border) 50%, var(--gallui-surface) 75%);
+  background-size: 200% 100%;
+  animation: gallui-skeleton-loading 1.5s ease-in-out infinite;
+}
+
+.gallui-skeleton--circular {
+  border-radius: 50%;
+}
+
+.gallui-skeleton--rectangular {
+  border-radius: var(--gallui-radius-md);
+}
+
+.gallui-skeleton--text {
+  border-radius: var(--gallui-radius-sm);
+}
+
+@keyframes gallui-skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

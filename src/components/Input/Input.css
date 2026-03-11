@@ -1,0 +1,55 @@
+.gallui-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gallui-space-xs);
+}
+
+.gallui-input__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gallui-text-primary);
+}
+
+.gallui-input {
+  font-family: var(--gallui-font);
+  font-size: 16px;
+  padding: var(--gallui-space-sm) var(--gallui-space-md);
+  border: 1px solid var(--gallui-border);
+  border-radius: var(--gallui-radius-md);
+  background: var(--gallui-bg);
+  color: var(--gallui-text-primary);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallui-input::placeholder {
+  color: var(--gallui-text-secondary);
+}
+
+.gallui-input:focus {
+  border-color: var(--gallui-primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.gallui-input--error {
+  border-color: var(--gallui-error);
+}
+
+.gallui-input--error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.gallui-input--disabled {
+  background: var(--gallui-surface);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.gallui-input__helper {
+  font-size: 14px;
+  color: var(--gallui-text-secondary);
+}
+
+.gallui-input__helper--error {
+  color: var(--gallui-error);
+}

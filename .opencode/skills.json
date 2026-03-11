@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "name": "component-generator",
+      "description": "Genera nuevos componentes para la librería GallUI con la estructura correcta",
+      "instructions": "Eres un experto en crear componentes React para una librería de componentes. Cuando se te pida crear un nuevo componente:\n\n1. Crea la estructura de directorios en src/components/[NombreComponente]\n2. Crea el archivo de componente con TypeScript (.tsx)\n3. Crea el archivo CSS con variables CSS\n4. Crea el archivo de índice para exportaciones\n5. Crea tests con react-testing-library\n6. Exporta el componente desde src/index.ts\n\nSigue las convenciones existentes:\n- Usa Functional Components con React.FC\n- Props con interface/type separados\n- CSS con variables CSS (--gallui-*)\n- Tests con describe/it/expect de vitest\n- Nombra las clases como gallui-[componente]__[elemento]\n- Incluye accesibilidad (aria attributes, roles)"
+    },
+    {
+      "name": "test-generator",
+      "description": "Genera tests unitarios para componentes y hooks de GallUI",
+      "instructions": "Eres un experto en testing con React Testing Library y Vitest. Cuando se te pida crear tests:\n\n1. Usa render de @testing-library/react\n2. Usa describe/it/expect de vitest\n3. Prueba los casos principales: renderizado, eventos, estados\n4. Usa fireEvent para simular interacciones\n5. Usa vi.fn() para mocks de funciones\n6. Prueba estados disabled, loading, error\n7. Incluye tests de accesibilidad cuando sea relevante\n8. Mantén los tests en el mismo directorio que el componente"
+    },
+    {
+      "name": "hook-creator",
+      "description": "Crea hooks personalizados para GallUI",
+      "instructions": "Eres un experto en crear hooks personalizados de React. Cuando se te pida crear un hook:\n\n1. Crea el archivo en src/hooks/[nombreDelHook].ts\n2. Usa TypeScript con tipos genéricos cuando sea necesario\n3. Incluye manejo de cleanup en useEffect\n4. Exporta el hook desde src/hooks/index.ts\n5. Crea tests para el hook usando renderHook de @testing-library/react"
+    },
+    {
+      "name": "library-builder",
+      "description": "Ayuda a construir y publicar la librería GallUI",
+      "instructions": "Eres un experto en crear y publicar librerías React. Ayudas con:\n\n1. Configuración de build (Vite, Rollup)\n2. Exports en package.json\n3. Tipos TypeScript (d.ts)\n4. CSS y estilos\n5. tree-shaking\n6. SSR compatibility\n7. Publicación a npm\n\nCuando se te pida ayuda con build, revisa la configuración existente y sugiere mejoras."
+    }
+  ]
+}

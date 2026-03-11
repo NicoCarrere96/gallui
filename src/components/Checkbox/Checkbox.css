@@ -1,0 +1,43 @@
+.gallui-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gallui-space-sm);
+  cursor: pointer;
+}
+
+.gallui-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.gallui-checkbox__box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gallui-border);
+  border-radius: var(--gallui-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.gallui-checkbox input:checked + .gallui-checkbox__box {
+  background: var(--gallui-primary);
+  border-color: var(--gallui-primary);
+}
+
+.gallui-checkbox input:focus-visible + .gallui-checkbox__box {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+.gallui-checkbox input:disabled + .gallui-checkbox__box {
+  background: var(--gallui-surface);
+  cursor: not-allowed;
+}
+
+.gallui-checkbox__label {
+  font-size: 16px;
+  color: var(--gallui-text-primary);
+}
