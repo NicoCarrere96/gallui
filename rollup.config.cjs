@@ -1,12 +1,12 @@
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from 'rollup-plugin-typescript2';
-import postcss from 'rollup-plugin-postcss';
-import terser from '@rollup/plugin-terser';
+const resolve = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
+const typescript = require('rollup-plugin-typescript2');
+const postcss = require('rollup-plugin-postcss');
+const terser = require('@rollup/plugin-terser');
 
 const packageJson = require('./package.json');
 
-export default {
+module.exports = {
   input: 'src/index.ts',
   output: [
     {
@@ -26,6 +26,7 @@ export default {
     }),
     commonjs(),
     typescript({
+      tsconfig: './tsconfig.build.json',
       tsconfigOverride: {
         compilerOptions: {
           noEmit: false,

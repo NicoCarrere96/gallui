@@ -16,7 +16,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   siblings = 1,
   className = '',
 }) => {
-  const [openDropdown, setOpenDropdown] = useState<'start' | 'end' | null>(null);
+  const [openDropdown, setOpenDropdown] = useState<'ellipsis-start' | 'ellipsis-end' | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -108,7 +108,7 @@ export const Pagination: React.FC<PaginationProps> = ({
               <div className="gallui-pagination__ellipsis-wrapper">
                 <button
                   className="gallui-pagination__ellipsis"
-                  onClick={() => setOpenDropdown(openDropdown === page.type ? null : page.type)}
+                  onClick={() => setOpenDropdown(openDropdown === page.type ? null : (page.type as 'ellipsis-start' | 'ellipsis-end'))}
                   aria-label={page.type === 'ellipsis-start' ? 'Go to previous pages' : 'Go to next pages'}
                   aria-expanded={openDropdown === page.type}
                 >
