@@ -2,6 +2,12 @@
   "name": "gallui",
   "version": "1.0.0",
   "type": "module",
+  "description": "A modern, accessible, and well-tested React component library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicoCarrere96/gallui.git"
+  },
+  "homepage": "https://github.com/NicoCarrere96/gallui#readme",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
