@@ -28,6 +28,15 @@ export type { TabsProps, Tab } from './components/Tabs';
 export { Skeleton } from './components/Skeleton';
 export type { SkeletonProps } from './components/Skeleton';
 
+export { Carousel } from './components/Carousel';
+export type { CarouselProps, CarouselItem } from './components/Carousel';
+
+export { Pagination } from './components/Pagination';
+export type { PaginationProps } from './components/Pagination';
+
+export { Navbar } from './components/Navbar';
+export type { NavbarProps, NavItem } from './components/Navbar';
+
 export { useModal, useClickOutside, useDebounce, useLocalStorage, useMediaQuery } from './hooks';
 
 import './styles/variables.css';

@@ -1,0 +1,125 @@
+.gallui-pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--gallui-space-xs);
+}
+
+.gallui-pagination__list {
+  display: flex;
+  align-items: center;
+  gap: var(--gallui-space-xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallui-pagination__page,
+.gallui-pagination__arrow {
+  min-width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--gallui-radius-md);
+  background: transparent;
+  color: var(--gallui-text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0 var(--gallui-space-sm);
+}
+
+.gallui-pagination__page:hover:not(:disabled),
+.gallui-pagination__arrow:hover:not(:disabled) {
+  background: var(--gallui-surface);
+}
+
+.gallui-pagination__page--active {
+  background: var(--gallui-primary);
+  color: white;
+}
+
+.gallui-pagination__page--active:hover {
+  background: var(--gallui-primary-hover);
+}
+
+.gallui-pagination__arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.gallui-pagination__ellipsis-wrapper {
+  position: relative;
+}
+
+.gallui-pagination__ellipsis {
+  min-width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--gallui-text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.gallui-pagination__ellipsis:hover {
+  background: var(--gallui-surface);
+  color: var(--gallui-primary);
+}
+
+.gallui-pagination__dropdown {
+  position: absolute;
+  top: 100%;
+  background: var(--gallui-bg);
+  border: 1px solid var(--gallui-border);
+  border-radius: var(--gallui-radius-md);
+  box-shadow: var(--gallui-shadow-md);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.gallui-pagination__dropdown--left {
+  left: 0;
+}
+
+.gallui-pagination__dropdown--right {
+  right: 0;
+}
+
+.gallui-pagination__dropdown-item {
+  min-width: 40px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--gallui-text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0 var(--gallui-space-sm);
+  white-space: nowrap;
+}
+
+.gallui-pagination__dropdown-item:hover {
+  background: var(--gallui-surface);
+}
+
+.gallui-pagination__dropdown-item--active {
+  background: var(--gallui-primary);
+  color: white;
+}
+
+.gallui-pagination__dropdown-item--active:hover {
+  background: var(--gallui-primary-hover);
+}
