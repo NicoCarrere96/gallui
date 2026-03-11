@@ -1,6 +1,6 @@
 {
   "name": "gallui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A modern, accessible, and well-tested React component library",
   "repository": {
